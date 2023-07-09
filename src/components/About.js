@@ -29,7 +29,7 @@ export default function About() {
       <div>
         <div className="container" style={myStyle}>
           <div className="accordion" id="accordionExample">
-            <h1 className="my-3 style">About Us</h1>
+            <h1 className="my-3 style">TextCraft 📝✨</h1>
             <div className="accordion-item">
               <h2 className="accordion-header">
                 <button
@@ -40,7 +40,7 @@ export default function About() {
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                  Accordion Item #1
+                  What is textCraft? 🤔
                 </button>
               </h2>
               <div
@@ -49,15 +49,11 @@ export default function About() {
                 data-bs-parent="#accordionExample"
               >
                 <div className="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It
-                  is shown by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the{" "}
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  <strong>TextCraft</strong> is a React application developed as
+                  a beginner project to gain hands-on experience with React. It
+                  incorporates various essential concepts such as state
+                  management using hooks (e.g., useState), routing, props, and
+                  the React environment.
                 </div>
               </div>
             </div>
@@ -71,7 +67,7 @@ export default function About() {
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  Accordion Item #2
+                  Features 🚀
                 </button>
               </h2>
               <div
@@ -80,15 +76,29 @@ export default function About() {
                 data-bs-parent="#accordionExample"
               >
                 <div className="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the{" "}
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  <ul>
+                    <li>
+                      String Manipulation: TextCraft offers a range of string
+                      manipulation functions, including uppercase and lowercase
+                      conversions, inserting new lines, and capitalizing the
+                      first letter of each word.
+                    </li>
+                    <li>
+                      Dark Mode UI 🌙: TextCraft provides a user-friendly dark
+                      mode interface, offering a visually appealing experience
+                      for users who prefer a darker color scheme.
+                    </li>
+                    <li>
+                      Customizable Themes 🌈: Users can select from a variety of
+                      themes to personalize the app's appearance and make it
+                      more visually engaging.
+                    </li>
+                    <li>
+                      Character and Word Count 🔢: TextCraft provides a
+                      character count and word count feature, allowing users to
+                      keep track of the length and structure of their text.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -102,7 +112,7 @@ export default function About() {
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  Accordion Item #3
+                  Getting Started 🏁
                 </button>
               </h2>
               <div
@@ -111,20 +121,35 @@ export default function About() {
                 data-bs-parent="#accordionExample"
               >
                 <div className="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the{" "}
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  <ol>
+                    <strong>
+                      To run TextCraft locally, follow these steps:
+                    </strong>
+                    <li>
+                      Clone this repository to your local machine: <br />
+                      <strong>
+                        git clone https://github.com/your-username/textcraft.git
+                      </strong>
+                    </li>
+                    <li>
+                      Navigate to the project directory: <br />
+                      <strong>cd textcraft</strong>
+                    </li>
+                    <li>
+                      Install the required dependencies using npm or yarn:{" "}
+                      <br />
+                      <strong>npm install</strong>
+                    </li>
+                    <li>
+                      Start the development server: npm start Open your browser
+                      and visit http://localhost:3000 to access TextCraft.
+                    </li>
+                  </ol>
                 </div>
               </div>
             </div>
           </div>
-          <div className="container my-3">
+          {/* <div className="container my-3">
             <button
               onClick={toggleStyle}
               type="button"
@@ -132,7 +157,7 @@ export default function About() {
             >
               {btnText}
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

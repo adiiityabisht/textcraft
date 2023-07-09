@@ -63,19 +63,39 @@ export default function TextForm(props) {
             rows="8"
           ></textarea>
         </div>
-        <button className="btn btn-primary" onClick={handleUpClick}>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-primary"
+          onClick={handleUpClick}
+        >
           upperCase
         </button>
-        <button className="btn btn-primary mx-2" onClick={handleLowClick}>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-primary mx-2 my-2"
+          onClick={handleLowClick}
+        >
           lowerCase
         </button>
-        <button className="btn btn-primary mx" onClick={handleNewLineClick}>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-primary mx"
+          onClick={handleNewLineClick}
+        >
           newLine
         </button>
-        <button className="btn btn-primary mx-2" onClick={handleCapsClick}>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-primary mx-2 my-2"
+          onClick={handleCapsClick}
+        >
           caps
         </button>
-        <button className="btn btn-primary mx" onClick={handleCopy}>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-primary mx"
+          onClick={handleCopy}
+        >
           copy
         </button>
       </div>
@@ -87,8 +107,13 @@ export default function TextForm(props) {
       >
         <h2>Your Text Summary</h2>
         <p>
-          You have entered {text.split(" ").length-1} words and {text.length}{" "}
-          characters
+          You have entered{" "}
+          {
+            text.split(" ").filter((element) => {
+              return element.length !== 0;
+            }).length
+          }{" "}
+          words and {text.length} characters
         </p>
       </div>
     </>

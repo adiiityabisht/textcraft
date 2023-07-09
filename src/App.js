@@ -21,7 +21,7 @@ function App() {
   const showAlert = (message, type) => {
     setAlert({
       msg: message,
-      type: type,
+      type: type
     });
   };
   setTimeout(() => {
